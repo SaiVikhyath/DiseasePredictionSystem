@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 50%;
+    background: linear-gradient(#00449e, #e66465, #7fffd4);
+    background-size: cover; 
+}
+    h1,h3{
+        text-align: center;
+    }
+    .container
+    {
+        background-color: ;
+        background: linear-gradient(#ff7f50,#87ceeb , #da70d6);
+        font-weight: bold;
+        font-size: small;
+        color: black;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <div>
+            <header >
+                <h1 style="color:coral; background-color:lightgoldenrodyellow; font-family: 'Times New Roman';" class="h1">Disease Prediction System</h1><br><br>
+            </header>
+                <h3 style="color:azure;" class="h3">
+                    <p>Just answer our 50 Yes/No questions and we will diagnose your illness</p>
+                </h3><br><br>
+                <div>
+                    <form action="" method="post">
+                        
+                        {% csrf_token %}
+                        
+                        <div class="container">                                                                                                                                           
+                            <div class="row mb-5">
+                            <div class="col-sm">
+                            <label for="abdominal_pain">Do you have ABDOMINAL PAIN?</label><br>
+                            <select name="abdominal_pain" id="abdominal_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm">
+                            <label for="acidity">Do you have ACIDITY?</label><br>
+                            <select name="acidity" id="acidity">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm">
+                            <label for="back_pain">Do you have BACKPAIN?</label><br>
+                            <select name="back_pain" id="back_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+                            </div>
+                            
+                            <div class="row mb-5">
+                            <div class="col-sm">    
+                            <label for="belly_pain">Do you have BELLY PAIN?</label><br>
+                            <select name="belly_pain" id="belly_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm">
+                            <label for="blurred_and_distorted_vision">Do you have BLURRED AND DISTORTED VISION?</label><br>
+                            <select name="blurred_and_distorted_vision" id="blurred_and_distorted_vision">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm">
+                            <label for="breathlessness">Do you have BREATHLESSNESS?</label><br>
+                            <select name="breathlessness" id="breathlessness">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="chest_pain">Do you have CHEST PAIN?</label><br>
+                            <select name="chest_pain" id="chest_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="chills">Do you have CHILLS?</label><br>
+                            <select name="chills" id="chills">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="congestion">Do you have CONGESTION?</label><br>
+                            <select name="congestion" id="congestion">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="constipation">Do you have CONSTIPATION?</label><br>
+                            <select name="constipation" id="constipation">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="continuous_sneezing">Do you have CONTINUOUS SNEEZING?</label><br>
+                            <select name="continuous_sneezing" id="continuous_sneezing">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="cough">Do you have COUGH?</label><br>
+                            <select name="cough" id="cough">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="dark_urine">Do you have DARK URINE?</label><br>
+                            <select name="dark_urine" id="dark_urine">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm ">
+                            <label for="depression">Do you have DEPRESSION?</label><br>
+                            <select name="depression" id="depression">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="diarrhoea">Do you have DIARRHOEA?</label><br>
+                            <select name="diarrhoea" id="diarrhoea">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="excessive_hunger">Do you have EXCESSIVE HUNGER?</label><br>
+                            <select name="excessive_hunger" id="excessive_hunger">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="headache">Do you have HEADACHE?</label><br>
+                            <select name="headache" id="headache">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="high_fever">Do you have HIGH FEVER?</label><br>
+                            <select name="high_fever" id="high_fever">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="increased_appetite">Do you have INCREASED APPETITE?</label><br>
+                            <select name="increased_appetite" id="increased_appetite">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="indigestion">Do you have INDIGESTION?</label><br>
+                            <select name="indigestion" id="indigestion">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="irritability">Do you have IRRITABILITY?</label><br>
+                            <select name="irritability" id="irritability">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="joint_pain">Do you have JOINT PAIN?</label><br>
+                            <select name="joint_pain" id="joint_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="lethargy">Do you have LETHARGY?</label><br>
+                            <select name="lethargy" id="lethargy">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="loss_of_appetite">Do you have LOSS OF APPETITE?</label><br>
+                            <select name="loss_of_appetite" id="loss_of_appetite">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="loss_of_smell">Do you have SMELL?</label><br>
+                            <select name="loss_of_smell" id="loss_of_smell">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="loss_of_taste">Do you have LOSS OF TASTE?</label><br>
+                            <select name="loss_of_taste" id="loss_of_taste">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="mild_fever">Do you have MILD FEVER?</label><br>
+                            <select name="mild_fever" id="mild_fever">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="muscle_pain">Do you have MUSCLE PAINS?</label><br>
+                            <select name="muscle_pain" id="muscle_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="pain_behind_the_eyes">Do you have PAIN BEHIND THE EYES?</label><br>
+                            <select name="pain_behind_the_eyes" id="pain_behind_the_eyes">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="red_spots_over_the_body">Do you have RED SPOTS OEVR THE BODY?</label><br>
+                            <select name="red_spots_over_the_body" id="red_spots_over_the_body">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="redness_of_eyes">Do you have REDNESS OF EYES?</label><br>
+                            <select name="redness_of_eyes" id="redness_of_eyes">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="restlessness">Do you have RESTLESSNESS?</label><br>
+                            <select name="restlessness" id="restlessness">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="runny_nose">Do you have RUNNY NOSE?</label><br>
+                            <select name="runny_nose" id="runny_nose">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="shivering">Do you have SHIVERING?</label><br>
+                            <select name="shivering" id="shivering">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="sinus_pressure">Do you have SINUS PRESSURE?</label><br>
+                            <select name="sinus_pressure" id="sinus_pressure">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="skin_rash">Do you have SKIN RASH?</label><br>
+                            <select name="skin_rash" id="skin_rash">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="sore_throat">Do you have SORE THROAT?</label><br>
+                            <select name="sore_throat" id="sore_throat">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="stiff_neck">Do you have STIFF NECK?</label><br>
+                            <select name="stiff_neck" id="stiff_neck">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="stomach_pain">Do you have STOMACH PAIN?</label><br>
+                            <select name="stomach_pain" id="stomach_pain">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="sweating">Do you have SWEATING?</label><br>
+                            <select name="sweating" id="sweating">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="throat_irritation">Do you have THROAT IRRITATION?</label><br>
+                            <select name="throat_irritation" id="throat_irritation">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="tiredness">Do you have TIREDNESS?</label><br>
+                            <select name="tiredness" id="tiredness">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                    
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="vomiting">Do you have VOMITING?</label><br>
+                            <select name="vomiting" id="vomiting">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="watering_from_eyes">Do you have WATERING FROM EYES?</label><br>
+                            <select name="watering_from_eyes" id="watering_from_eyes">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="weight_loss">Do you have WEIGHT LOSS?</label><br>
+                            <select name="weight_loss" id="weigth_loss">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="yellowing_of_eyes">Do you have YELLOWING OF EYES?</label><br>
+                            <select name="yellowing_of_eyes" id="yellowing_of_eyes">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="yellowish_skin">Do you have YELLOWISH SKIN?</label><br>
+                            <select name="yellowish_skin" id="yellowish_skin">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm">
+                            <label for="itching">Do you have ITCHING?</label><br>
+                            <select name="itching" id="itching">
+                                <option value="NO">NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                        </div>
+                        </div>
+                        <center><input type="submit" class="btn btn-success btn-lg"></center><br>
+                        
+                        
+                        <center>
+                            <div>
+                            {% for message in messages %}
+                            <h3 style="color: cyan; font-style: italic; font-family: 'Times New Roman'; font-weight: 500;">{{message}}</h3><br>
+                            {% endfor %}
+                            </div>
+                        </center>
+                    </form>
+                </div>
+            <center>
+                <h4 style="color: lavender; font-family: 'Times New Roman'; 
+                background-color:cornflowerblue;">
+                Developed by Chandan Sai
+                </h4>
+            </center>
+    </div>
+
+    
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
