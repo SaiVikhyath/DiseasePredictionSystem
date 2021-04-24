@@ -216,9 +216,10 @@ def home(request):
             messages.error(request, 'No Illness diagnosed')
             messages.error(request, 'If you feel concerned, please consult a doctor')
         else:
-            messages.error(request, 'Diagnosed : ' + str(labelUnmap(np.argmax(model.predict([[inp]])))))
-            messages.error(request, '***This model on detects certain common disease.***')
-            messages.error(request, '**This model is recommmended to be used only for reference and as early diagnosis tool**')
+            messages.info(request, 'Diagnosed : ' + str(labelUnmap(np.argmax(model.predict([[inp]])))))
+            messages.info(request, '***This model only detects certain common disease.***')
+            messages.info(request, '**This model is recommmended to be used only for reference and as early diagnosis tool**')
+            messages.error(request, '**Please do get tested if you are diagnosed with any disease here.**')
         return render(request, 'home.html')
     else:
         return render(request, 'home.html')
